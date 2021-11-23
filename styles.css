@@ -1,0 +1,107 @@
+body {
+    background-color: #0d1a2d;
+}
+img {
+    width: 100%;
+}
+/* Card */
+.card {
+    background-color: #15273f;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin: 0 auto;
+    color: white;
+    padding: 1.5em;
+    border-radius: 25px;;
+}
+/* Image and overlay */
+.image {
+    position: relative;
+}
+.overlay {
+    /* display: none; */
+    background-color: #0ff1e8;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    border-radius: 10px;
+}
+.overlay img {
+    width: 20%;
+}
+.image:hover .overlay {
+    opacity: .5;
+}
+.card img {
+    border-radius: 10px;
+}
+/* Continuing w/ card */
+.product-link {
+    color: white;
+    text-decoration: none;
+}
+.product-link:hover {
+    color: #0ff1e8;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats p {
+    margin-left: 5px;
+}
+.stats-row {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.time {
+    justify-content: flex-end;
+}
+.time img {
+    max-width: 30px;
+}
+.eth {
+    justify-content: flex-start;
+    align-items: center;
+}
+.eth p {
+    color: #0ff1e8;
+}
+.eth img {
+    max-width: 10px;
+}
+
+
+.creator img {
+    max-width: 30px;
+    margin-right: 15px;
+}
+.creator-link {
+    color: white;
+    text-decoration: none;
+}
+.creator-link:hover {
+    color: #0ff1e8;
+}
+.attribution {
+    color: white;
+}
+.attribution a {
+    color:#0ff1e8;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
+
